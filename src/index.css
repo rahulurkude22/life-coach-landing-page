@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Master";
+  src: url("/fonts/Master.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@layer utilities {
+  .font-master {
+    font-family: "Master", sans-serif;
+  }
+}
