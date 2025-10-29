@@ -18,6 +18,16 @@ function CTASection() {
             Book a 1-on-1 Mind Clarity Session with Alisha Jaiswal
           </a>
         </div>
+        <p className="text-sm font-bold mb-3">or</p>
+        <div className="w-fit bg-linear-to-t from-blue-800 to-blue-500 text-white rounded-full py-3 px-6 mb-6 mx-auto">
+          <a
+            href="https://www.unfoldwithalisha.com"
+            target="_blank"
+            className="text-xs md:text-4xl font-semibold text-nowrap"
+          >
+            Visit our website
+          </a>
+        </div>
       </div>
     </section>
   );
