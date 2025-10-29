@@ -9,13 +9,14 @@ function CTASection() {
         <div className="w-full flex justify-center">
           <img src="images/footer.png" alt="Footer" />
         </div>
-        <div className="w-fit bg-linear-to-t from-gray-800 to-gray-500 text-white rounded-full py-3 px-6 mb-6 mx-auto">
+        <div className="md:w-3xl flex justify-center bg-linear-to-t from-teal-900  to-teal-700 text-white rounded-full py-4 px-8 my-3 mx-auto shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105">
           <a
             href="https://topmate.io/unfoldwith_alisha"
             target="_blank"
-            className="text-xs md:text-4xl font-semibold text-nowrap"
+            rel="noopener noreferrer"
+            className="flex items-center gap-3 text-lg md:text-6xl font-semibold text-nowrap"
           >
-            Book a 1-on-1 Mind Clarity Session with Alisha Jaiswal
+            <span>Book 1:1 session</span>
           </a>
         </div>
         <p className="text-sm font-bold mb-3">or</p>
