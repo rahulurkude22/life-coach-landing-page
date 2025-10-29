@@ -2,7 +2,7 @@ import CoachBioSection from "./components/CoachBioSection";
 import CTASection from "./components/CTASection";
 import FaqSection from "./components/FaqSection";
 import Footer from "./components/Footer";
-import HeroSection from "./components/Herosection";
+import HeroSection from "./components/HeroSection";
 import ProblemSection from "./components/ProblemSection";
 import ProcessSection from "./components/ProcessSection";
 
