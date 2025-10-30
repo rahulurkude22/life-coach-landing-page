@@ -13,7 +13,7 @@ function HeroSection() {
             rel="noopener noreferrer"
             className="flex items-center gap-3 text-lg md:text-6xl font-semibold text-nowrap"
           >
-            <span>Book 1:1 session</span>
+            <span>Book 1:1 session - 40 mins</span>
           </a>
         </div>
         <p className="text-sm font-bold mb-3">or</p>
@@ -26,7 +26,11 @@ function HeroSection() {
             Visit our website
           </a>
         </div>
-
+        <div className="w-fit bg-linear-to-t from-red-800 to-red-500 text-white rounded-full py-3 px-6 mb-6 mx-auto">
+          <span className="text-xs md:text-4xl font-semibold text-nowrap">
+            With over 100+ life transformed.
+          </span>
+        </div>
         <div className="mb-6">
           <p className="text-sm md:text-base font-semibold text-gray-700 mb-2">
             <span className="underline">

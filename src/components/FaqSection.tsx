@@ -83,7 +83,7 @@ function FaqSection() {
           rel="noopener noreferrer"
           className="flex items-center gap-3 text-lg md:text-6xl font-semibold text-nowrap"
         >
-          <span>Book 1:1 session</span>
+          <span>Book 1:1 session - 40 mins</span>
         </a>
       </div>
     </div>
