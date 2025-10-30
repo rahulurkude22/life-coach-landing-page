@@ -7,7 +7,7 @@ function Testimonials() {
   const [isPlaying, setIsPlaying] = useState(false);
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
 
-  const videoRef = useRef(null);
+  const videoRef = useRef<HTMLVideoElement | null>(null);
   // const testimonials = [
   //   {
   //     id: 1,
@@ -123,7 +123,7 @@ function Testimonials() {
     togglePlay();
   };
 
-  const handleTestimonialChange = (index) => {
+  const handleTestimonialChange = (index: number) => {
     if (videoRef.current) {
       videoRef.current.pause();
     }
