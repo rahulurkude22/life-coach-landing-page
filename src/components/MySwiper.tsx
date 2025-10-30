@@ -13,15 +13,15 @@ function MySwiper({ children }: PropsWithChildren) {
       modules={[Pagination]}
       breakpoints={{
         0: {
-          slidesPerView: 1, // 👈 small screens
+          slidesPerView: 1,
           spaceBetween: 10,
         },
         768: {
-          slidesPerView: 2, // 👈 tablets
+          slidesPerView: 2,
           spaceBetween: 20,
         },
         1024: {
-          slidesPerView: 3, // 👈 desktops
+          slidesPerView: 3,
           spaceBetween: 30,
         },
       }}

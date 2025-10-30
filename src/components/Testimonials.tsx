@@ -2,111 +2,13 @@ import { Play } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import MySwiper from "./MySwiper";
 import { SwiperSlide } from "swiper/react";
+import { testimonials } from "../utils";
 
 function Testimonials() {
   const [isPlaying, setIsPlaying] = useState(false);
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
 
   const videoRef = useRef<HTMLVideoElement | null>(null);
-  // const testimonials = [
-  //   {
-  //     id: 1,
-  //     name: "Sarah Johnson",
-  //     role: null,
-  //     image: "images/testimonials/anycript_thumbnail_1.webp",
-  //     content:
-  //       "Hi, I'm Beathe. I attend today this season, and I feel like we are not alone. There is many people that is the same problem. It's fun to listen to them, and also we had some learning from their problems. I feel more relaxed. I totally recommend it.",
-  //     rating: 5,
-  //   },
-  //   {
-  //     id: 2,
-  //     name: "Rimjhim Rai",
-  //     role: null,
-  //     image: "images/testimonials/anycript_thumbnail_2.webp",
-  //     content:
-  //       "I was waiting since a very long time for this session with Alisha. We had a very great time. She answered all the questions and all the doubts. She cleared and looking forward for more such classes.. Alisha has us a lot. Was a good session. Thank you.",
-  //     rating: 5,
-  //   },
-  //   {
-  //     id: 3,
-  //     name: "Shivali Khanna",
-  //     role: null,
-  //     image: "images/testimonials/anycript_thumbnail_3.webp",
-  //     content:
-  //       "Hi, I'm Shivali Khanna. Today, I attended a very good session by Mrs. Alisha. It was a life coach session about time, family, life, career, and how to manage my time for my family and my career. With this session, it was a very self-realization session where I realized what are my goals in life and how I should work towards them, how I should manage my time between my career and my kids... ",
-  //     rating: 5,
-  //   },
-  //   {
-  //     id: 3,
-  //     name: "Sheetal Kandwal",
-  //     role: "Professional Anchor & Model",
-  //     image: "images/testimonials/anycript_thumbnail_6.webp",
-  //     content:
-  //       "Life is itself a learning process. Life coach, I never understood and didn't know. I came here as a interaction. But I got this wheel which I wanted to mark myself as a result of my points. I got to know how many things I'm in, how many things I have, and how many things I have to work on. So at this date, I'm taking a lot of questions... ",
-  //     rating: 5,
-  //   },
-  //   {
-  //     id: 3,
-  //     name: "Snehal Rai",
-  //     role: "Signature Analyst",
-  //     image: "images/testimonials/anycript_thumbnail_30.webp",
-  //     content:
-  //       "Hello, everyone. My name is Snehal Rai. I'm a signature analyst. And I'm going to attend Alicia Jaiswal's session today. And it's amazing. It's really outstanding. So normally, you don't have a problem, you should have fun and interactive sessions. Because you can learn something. As I said, if you have anxiety, you can just put your face in your face and see the result. And see the result.. I'm happy. I'm happy coming here. Thank you so much, Alisha.",
-  //     rating: 5,
-  //   },
-  // ];
-  const testimonials = [
-    {
-      id: 1,
-      title: "Beathe",
-      description:
-        "Hi, I'm Beathe. I attend today this season, and I feel like we are not alone. There is many people that is the same problem. It's fun to listen to them, and also we had some learning from their problems. I feel more relaxed. I totally recommend it.",
-      author: "Beathe",
-      role: null,
-      videoUrl: "videos/1.mp4",
-      thumbnail: "images/testimonials/anycript_thumbnail_1.webp",
-    },
-    {
-      id: 2,
-      title: "Rimjhim Rai",
-      description:
-        "I was waiting since a very long time for this session with Alisha. We had a very great time. She answered all the questions and all the doubts. She cleared and looking forward for more such classes.. Alisha has us a lot. Was a good session. Thank you.",
-      author: "Rimjhim Rai",
-      role: null,
-      videoUrl: "videos/2.mp4",
-      thumbnail: "images/testimonials/anycript_thumbnail_2.webp",
-    },
-    {
-      id: 3,
-      title: "Shivali Khanna",
-      description:
-        "Hi, I'm Shivali Khanna. Today, I attended a very good session by Mrs. Alisha. It was a life coach session about time, family, life, career, and how to manage my time for my family and my career. With this session, it was a very self-realization session where I realized what are my goals in life and how I should work towards them, how I should manage my time between my career and my kids. She gave me a lot of coaching tips, a lot of ideas, and how, as a person, I should value my strengths and weaknesses. I I should improve my weaknesses as a person.",
-      author: "Shivali Khanna",
-      role: null,
-      videoUrl: "videos/3.mp4",
-      thumbnail: "images/testimonials/anycript_thumbnail_3.webp",
-    },
-    {
-      id: 4,
-      title: "Sheetal Kandwal",
-      description:
-        "Life is itself a learning process. Life coach, I never understood and didn't know. I came here as a interaction. But I got this wheel which I wanted to mark myself as a result of my points. I got to know how many things I'm in, how many things I have, and how many things I have to work on. So at this date, I'm taking a lot of questions. I'm going to go home and do a lot of homework at home, on which I'm going to. I will work, and how can I get in progress, how can I get in personal growth? The thing I have never thought has been ignited, that question has arised.",
-      author: "Sheetal Kandwal",
-      role: "Professional Anchor & Model",
-      videoUrl: "videos/4.mp4",
-      thumbnail: "images/testimonials/anycript_thumbnail_30.webp",
-    },
-    {
-      id: 5,
-      title: "Snehal Rai",
-      description:
-        "Hello, everyone. My name is Snehal Rai. I'm a signature analyst. And I'm going to attend Alicia Jaiswal's session today. And it's amazing. It's really outstanding. So normally, you don't have a problem, you should have fun and interactive sessions. Because you can learn something. As I said, if you have anxiety, you can just put your face in your face and see the result. And see the result.. I'm happy. I'm happy coming here. Thank you so much, Alisha.",
-      author: "Snehal Rai",
-      role: "Signature Analyst",
-      videoUrl: "videos/5.mp4",
-      thumbnail: "images/testimonials/anycript_thumbnail_6.webp",
-    },
-  ];
 
   const togglePlay = () => {
     if (videoRef.current) {

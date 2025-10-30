@@ -28,7 +28,7 @@ function HeroSection() {
         </div>
         <div className="w-fit bg-linear-to-t from-red-800 to-red-500 text-white rounded-full py-3 px-6 mb-6 mx-auto">
           <span className="text-xs md:text-4xl font-semibold text-nowrap">
-            With over 100+ life transformed.
+            With over 100+ lives transformed.
           </span>
         </div>
         <div className="mb-6">
