@@ -46,7 +46,7 @@ export const testimonials = [
       "Hello, everyone. My name is Snehal Rai. I'm a signature analyst. And I'm going to attend Alisha Jaiswal's session today. And it's amazing. It's really outstanding. So normally, you don't have a problem, you should have fun and interactive sessions. Because you can learn something. As I said, if you have anxiety, you can just put your face in your face and see the result. And see the result.. I'm happy. I'm happy coming here. Thank you so much, Alisha.",
     author: "Snehal Rai",
     role: "Signature Analyst",
-    videoUrl: "videos/5.mp4",
+    videoUrl: "videos/6.mp4",
     thumbnail: "images/testimonials/anycript_thumbnail_6.webp",
   },
   {
